@@ -4,7 +4,6 @@
   "description": "Tool for building resumes",
   "packageManager": "yarn@3.2.0",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
