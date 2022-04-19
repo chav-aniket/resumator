@@ -354,10 +354,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@floating-ui/core@npm:^0.6.1":
+  version: 0.6.2
+  resolution: "@floating-ui/core@npm:0.6.2"
+  checksum: b3e1844da852fe141cfa4163026a7c5ffb4399a96105340dffdd5b76dcafea72c6221a06b4674c2b500bc776adc9d9e4ed39dba55e7d844d9507d994c0af743a
+  languageName: node
+  linkType: hard
+
+"@floating-ui/dom@npm:0.4.4":
+  version: 0.4.4
+  resolution: "@floating-ui/dom@npm:0.4.4"
+  dependencies:
+    "@floating-ui/core": ^0.6.1
+  checksum: 1031cf3b5c18a9fe1edafafac1920ce882e50767a7b16ffed35807ccb84f5ff72b8247d94c7c680f6e8d913a0efe2d8906e051dbfa49c2633d2fc809d77e69b6
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
   checksum: 4059f790e2d07bf3c3ff3e0fec0daa8144fe35c1f6e0111c9921bd32106adaa97a4ab096ad7dab1e28ee6a9060083c4d1a4ada42a7f5f3f7a96b8812e2b757c1
+  languageName: node
+  linkType: hard
+
+"@hope-ui/solid@npm:^0.4.2":
+  version: 0.4.3
+  resolution: "@hope-ui/solid@npm:0.4.3"
+  dependencies:
+    "@floating-ui/dom": 0.4.4
+    csstype: 3.0.11
+    focus-trap: 6.7.3
+    lodash.merge: 4.6.2
+    scroll-lock: 2.1.5
+  peerDependencies:
+    "@stitches/core": ^1.2.7
+    solid-js: ^1.3.14
+    solid-transition-group: ^0.0.10
+  checksum: 52b4203543f727f394d88cc68344a8ed7bde5c5d6c6f2a78a29c0fb7b76ac3905eadbe6291716683b1eadd392bac98a97a7e21bb886afc1a7918e6c8cd705648
   languageName: node
   linkType: hard
 
@@ -402,6 +435,13 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 1388777b507b0c592d53f41b9d182e1a8de7763bc625fc07999b8edbc22325f074e5b3ec90af79c89d6987fdb2325bc66d59f483258543c14a43661621f841b0
+  languageName: node
+  linkType: hard
+
+"@stitches/core@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "@stitches/core@npm:1.2.7"
+  checksum: 362a3fa0ea3081c328ed1a3056a5b9e9e9d151d2f9276fa49112583d52314d8a9e47cf444600feed8f54ae52857e21d3a34ddb3174831b2470c1a40573268b7b
   languageName: node
   linkType: hard
 
@@ -638,6 +678,13 @@ __metadata:
   dependencies:
     safe-buffer: ~5.1.1
   checksum: 985d974a2d33e1a2543ada51c93e1ba2f73eaed608dc39f229afc78f71dcc4c8b7d7c684aa647e3c6a3a204027444d69e53e169ce94e8d1fa8d7dee80c9c8fed
+  languageName: node
+  linkType: hard
+
+"csstype@npm:3.0.11":
+  version: 3.0.11
+  resolution: "csstype@npm:3.0.11"
+  checksum: 95e56abfe9ca219ae065acb4e43f61771a03170eed919127f558dfa168240867aba7629c8d98a201a0dd06d9a5ce82686f0570031c928516c61816adbc7c877f
   languageName: node
   linkType: hard
 
@@ -929,6 +976,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"focus-trap@npm:6.7.3":
+  version: 6.7.3
+  resolution: "focus-trap@npm:6.7.3"
+  dependencies:
+    tabbable: ^5.2.1
+  checksum: 900c8fe94a7e0bcda7f0bf2c86dff174e997a1101f685833484cde721c8893729260b7a9f1f2c3a2c8560f5f84c332ba7d45695c7d4862f8f9340f6caceace3a
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^2.0.0, fs-minipass@npm:^2.1.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -1202,6 +1258,13 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: 74b8a23b102a6f2bf2d224797ae553a75488b5adbaee9c9b6e5ab8b510a2fc6e38f876d4c77dea672d4014a44b2399e15f2051ac2b37b87f74c0c7602003543b
+  languageName: node
+  linkType: hard
+
+"lodash.merge@npm:4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2"
+  checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
   languageName: node
   linkType: hard
 
@@ -1531,7 +1594,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "resumetor@workspace:."
   dependencies:
+    "@hope-ui/solid": ^0.4.2
+    "@stitches/core": ^1.2.7
     solid-js: ^1.3.15
+    solid-transition-group: ^0.0.10
     typescript: ^4.6.3
     vite: ^2.9.5
     vite-plugin-solid: ^2.2.6
@@ -1588,6 +1654,13 @@ __metadata:
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0
+  languageName: node
+  linkType: hard
+
+"scroll-lock@npm:2.1.5":
+  version: 2.1.5
+  resolution: "scroll-lock@npm:2.1.5"
+  checksum: f18e9b93084bde8c8f56f749a49ad5d2b4ca8aadbfcb640c025bb273ca041c465a08b79fa07eb378d3d4d69c95c5fed5d6881f8af0dc3ee03b60ed7012e61b2b
   languageName: node
   linkType: hard
 
@@ -1673,6 +1746,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"solid-transition-group@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "solid-transition-group@npm:0.0.10"
+  peerDependencies:
+    solid-js: ^1.0.0
+  checksum: ad87da0b35222e0764e1b5d47f59a54c106c8de4124362e0957764b3afc5e14b3341e8aa7a5c00bdcef00b6e01ad3eb5521f69ff8e74ba8cad257e728d27e2d9
+  languageName: node
+  linkType: hard
+
 "source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
@@ -1738,6 +1820,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"tabbable@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "tabbable@npm:5.2.1"
+  checksum: d26e9eeb880c4c78b59244bac2c931ad46f6c64a01e5c15ba6da348dc86442222912733846a9e63373342a81fa15d4afb31267606b38431510d10b0fb9ec9bba
   languageName: node
   linkType: hard
 
